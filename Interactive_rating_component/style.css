@@ -1,0 +1,78 @@
+body {
+    font-family: Overpass;
+    font-size: 15px;
+    background-color: hsl(216, 12%, 8%);
+    min-height: 100vh;
+    min-width: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.interactiv-component {
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 355px;
+    height: 360px;
+    padding: 30px;
+}
+
+.star-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(213, 19%, 25%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.title {
+    color: hsl(0, 0%, 100%);
+    font-size: 30px;
+}
+
+.text {
+    color:hsl(216, 12%, 54%);
+    line-height: 27px;
+}
+
+.numbers-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+.rate-btn {
+    background-color: hsl(213, 19%, 25%);
+    color:hsl(216, 12%, 54%);
+    border-radius: 50%;
+    border: none;
+    width: 50px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.rate-btn:hover {
+    cursor: pointer;
+}
+
+.submit-button {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 50px;
+    height: 45px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.submit-button:hover {
+    cursor: pointer;
+}
