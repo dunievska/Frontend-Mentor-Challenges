@@ -10,8 +10,8 @@
     <title>Interactiv Rating Conponent</title>
 </head>
 <body>
-<main class="interactiv-component">
 
+<section class="interactiv-component">
     <div class="star-container">
         <img class="star" src="images/icon-star.svg" alt="">
     </div>
@@ -24,17 +24,32 @@
 
 
     <div class="numbers-container">
-        <input class="rate-btn" type="button" value="1"/>
-        <input class="rate-btn" type="button" value="2"/>
-        <input class="rate-btn" type="button" value="3"/>
-        <input class="rate-btn" type="button" value="4"/>
-        <input class="rate-btn" type="button" value="5"/>
+        <button class="rate-btn" type="button" value="1">1</button>
+        <button class="rate-btn" type="button" value="2">2</button>
+        <button class="rate-btn" type="button" value="3">3</button>
+        <button class="rate-btn" type="button" value="4">4</button>
+        <button class="rate-btn" type="button" value="5">5</button>
     </div>
 
-    <input class="submit-button" type="submit" value="submit"/>
-</main>
+    <button class="submit-button" type="submit" value="submit">Submit</button>
+</section>
 
-<script src="/js/index.js"></script>
+<section class="thank-you-state">
+    <div class="phone-container">
+        <img class="phone-image" src="images/illustration-thank-you.svg" alt="">
+    </div>
+
+    <div class="user-selection">
+        <p>You selected <span class="chosen-rating"></span> out of 5.</p>
+    </div>
+
+    <div class="thank-you-text">
+        <h1>Thank you!</h1>
+        <p> We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+    </div>
+</section>
+
+<script src="js/index.js"></script>
 </body>
 </html>
 

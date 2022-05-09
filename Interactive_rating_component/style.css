@@ -1,18 +1,19 @@
 body {
-    font-family: Overpass;
+    font-family: 'Overpass', sans-serif;
     font-size: 15px;
     background-color: hsl(216, 12%, 8%);
     min-height: 100vh;
     min-width: 90vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .interactiv-component {
+    display: flex;
     background-color: hsl(213, 19%, 18%);
     border-radius: 25px;
-    display: flex;
     flex-direction: column;
     width: 355px;
     height: 360px;
@@ -30,12 +31,12 @@ body {
     margin-bottom: 5px;
 }
 
-.title {
+h1 {
     color: hsl(0, 0%, 100%);
     font-size: 30px;
 }
 
-.text {
+.text, .thank-you-text {
     color:hsl(216, 12%, 54%);
     line-height: 27px;
 }
@@ -44,6 +45,12 @@ body {
     display: flex;
     justify-content: space-between;
     margin: 10px 0px;
+}
+
+.rate-btn:hover {
+    background-color: hsl(25, 97%, 53%) !important;
+    color:hsl(0, 0%, 100%) !important;
+    cursor: pointer;
 }
 
 .rate-btn {
@@ -57,6 +64,8 @@ body {
     font-size: 18px;
 }
 
+
+
 .submit-button {
     background-color: hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%);
@@ -68,3 +77,51 @@ body {
     font-weight: 700;
     margin-top: 15px;
 }
+
+.submit-button:hover {
+    cursor: pointer;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+.thank-you-state {
+    display: none;
+    flex-direction: column;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 25px;
+    width: 355px;
+    height: 360px;
+    padding: 30px;
+}
+
+.phone-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user-selection {
+    display: flex;
+    justify-content: center;
+}
+
+.user-selection p {
+    background-color: hsl(213, 19%, 25%);
+    color: hsl(25, 97%, 53%);
+    border-radius: 50px;
+    display: inline-block;
+    padding: 7px 17px;
+    justify-content: center;
+}
+
+.thank-you-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thank-you-text p {
+    text-align: center;
+}
+
